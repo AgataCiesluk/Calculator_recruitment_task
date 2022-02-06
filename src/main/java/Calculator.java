@@ -1,12 +1,13 @@
+import org.apache.commons.math3.util.Precision;
+
 import java.math.BigDecimal;
 
 public class Calculator {
 
-    public static double addAndConvert (double val1, double val2, String val1Unit, String val2Unit, String resultUnit){
-        double sum = 0; //use Precision.round(sum,2) to get double value rounded to 2 decimal places
-
-
-        return sum;
+    public static double addAndConvert (double val1, String val1Unit, double val2, String val2Unit, String resultUnit){
+        double sum = 0;
+        sum = converter(val1, val1Unit, resultUnit) + converter(val2, val2Unit, resultUnit);
+        return Precision.round(sum,2);
     }
 
     public static double converter (double value, String valueUnit, String convertToUnit) {
