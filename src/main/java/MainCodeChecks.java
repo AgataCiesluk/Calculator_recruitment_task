@@ -7,6 +7,6 @@ public class MainCodeChecks {
         System.out.println("Sum = " + Calculator.addAndConvert(8000,"m",8000,"ft","NM"));
         System.out.println("Difference = " + Calculator.subtractAndConvert(8000,"m",8000,"ft","NM"));
         System.out.println("Product = " + Calculator.multiplyAndConvert(8000,"m",8000,"ft","NM"));
-
+        System.out.println("Quotient = " + Calculator.divideAndConvert(8000,"m",0,"ft","NM"));
     }
 }

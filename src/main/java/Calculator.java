@@ -1,7 +1,5 @@
 import org.apache.commons.math3.util.Precision;
 
-import java.math.BigDecimal;
-
 public class Calculator {
 
     public static double addAndConvert (double val1, String val1Unit, double val2, String val2Unit, String resultUnit){
@@ -19,8 +17,17 @@ public class Calculator {
         return Precision.round(product,2);
     }
 
+    public static double divideAndConvert (double val1, String val1Unit, double val2, String val2Unit, String resultUnit) {
+        if (val2 == 0) {
+            throw new IllegalArgumentException("Do not divide by 0.");
+        } else {
+            double quotient = converter(val1, val1Unit, resultUnit) / converter(val2, val2Unit, resultUnit);
+            return Precision.round(quotient, 2);
+        }
+    }
+
     public static double converter (double value, String valueUnit, String convertToUnit) {
-        double convertedValue = 0;
+        double convertedValue;
 
         switch (convertToUnit) {
             case "m":
