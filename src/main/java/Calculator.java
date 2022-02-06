@@ -44,6 +44,19 @@ public class Calculator {
                 }
                 break;
             case "ft":
+                switch (valueUnit) {
+                    case "m":
+                        convertedValue = value * 3.2808399;
+                        break;
+                    case "NM":
+                        convertedValue = value * 6076.1155;
+                        break;
+                    case "ft":
+                        convertedValue = value;
+                        break;
+                    default:
+                        throw new IllegalArgumentException("Available units are: m (meters), ft (feet), NM (nautical miles).");
+                }
                 break;
             default:
                 throw new IllegalArgumentException("Available units are: m (meters), ft (feet), NM (nautical miles).");
