@@ -2,7 +2,7 @@
 Position of Java Developer
 
 <h4>Calculator</h4>
-User picks the type of operation to perform: ADD, SUBTRACT, DIVIDE, MULTIPLY, provides units (m, NM, ft) of inputs and the unit of the result and provides values that will be calculated. All inputs should be added as parameters to the URL: http://localhost:8080/calculator.
+User picks the type of operation to perform: ADD, SUBTRACT, DIVIDE, MULTIPLY, provides values, units of inputs (m, NM, ft) and the unit of the result. All inputs should be added as parameters to the URL: http://localhost:8080/calculator.
 
 Available units:
 - m - Meters,
