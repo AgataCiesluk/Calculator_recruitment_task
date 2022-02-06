@@ -14,6 +14,11 @@ public class Calculator {
         return Precision.round(difference,2);
     }
 
+    public static double multiplyAndConvert (double val1, String val1Unit, double val2, String val2Unit, String resultUnit) {
+        double product = converter(val1, val1Unit, resultUnit) * converter(val2, val2Unit, resultUnit);
+        return Precision.round(product,2);
+    }
+
     public static double converter (double value, String valueUnit, String convertToUnit) {
         double convertedValue = 0;
 
