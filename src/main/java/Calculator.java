@@ -5,9 +5,13 @@ import java.math.BigDecimal;
 public class Calculator {
 
     public static double addAndConvert (double val1, String val1Unit, double val2, String val2Unit, String resultUnit){
-        double sum = 0;
-        sum = converter(val1, val1Unit, resultUnit) + converter(val2, val2Unit, resultUnit);
+        double sum = converter(val1, val1Unit, resultUnit) + converter(val2, val2Unit, resultUnit);
         return Precision.round(sum,2);
+    }
+
+    public static double subtractAndConvert (double val1, String val1Unit, double val2, String val2Unit, String resultUnit) {
+        double difference = converter(val1, val1Unit, resultUnit) - converter(val2, val2Unit, resultUnit);
+        return Precision.round(difference,2);
     }
 
     public static double converter (double value, String valueUnit, String convertToUnit) {
