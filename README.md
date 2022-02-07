@@ -18,5 +18,10 @@ Available parameters:
 - resultUnit (m, ft, NM),
 - operation (add, subtract, multiply, divide).
 
-Exemplary URL with parameters:
+Exemplary URL with parameters and the response:
+```
 http://localhost:8080/calculator?val1=8000&val1Unit=m&val2=8000&val2Unit=ft&resultUnit=NM&operation=add
+Sum = 5,64 NM
+```
+## How to start using app?
+Firstly, connect to the server (I use Tomcat Server and InteliiJ IDE). Secondly, open calculator.html in your browser and click on hyperlink. It will take you to the exemplary URL with parameters and you will see the server response. Modify parameters as you wish and enjoy seeing the calculated result.
