@@ -31,6 +31,23 @@ Exemplary URL (with operation type as an endpoint) and the response:
 http://localhost:8080/add?val1=8000&val1Unit=m&val2=8000&val2Unit=ft&resultUnit=NM
 Sum = 5,64 NM
 ```
+curl:
+```
+http://localhost/add?val1=8000&val1Unit=m&val2=8000&val2Unit=ft&resultUnit=NM
+Sum = 5,64 NM
+```
+```
+http://localhost/subtract?val1=8000&val1Unit=m&val2=8000&val2Unit=ft&resultUnit=NM
+Difference = 3,00 NM
+```
+```
+http://localhost/multiply?val1=8000&val1Unit=m&val2=8000&val2Unit=ft&resultUnit=NM
+Product = 5,69 NM
+```
+```
+http://localhost/divide?val1=8000&val1Unit=m&val2=8000&val2Unit=ft&resultUnit=NM
+Quotient = 3,28 NM
+```
 
 ## How to start using app?
-Firstly, connect to the server (I use Tomcat Server and InteliiJ IDE). Secondly, open calculator.html in your browser and click one of the hyperlink. Depending on what you choose, it will take you to the one of the exemplary URL with parameters and you will see the server response. Modify parameters as you wish and enjoy seeing the calculated result.
+Firstly, connect to the server (I use Tomcat Server and InteliiJ IDE). Secondly, the alternative to ```curl``` is to open calculator.html in your browser and click one of the hyperlink. Depending on what you choose, it will take you to the one of the exemplary URL with parameters and you will see the server response. Modify parameters as you wish and enjoy seeing the calculated result.
